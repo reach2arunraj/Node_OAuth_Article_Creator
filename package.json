@@ -4,7 +4,8 @@
   "description": "story_creator",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "start": "cross-env NODE_ENV=production node app",
+    "dev": "cross-env NODE_ENV=development nodemon app"
   },
   "author": "Arun Raj K",
   "license": "ISC",
@@ -21,6 +22,7 @@
     "passport-google-oauth20": "^2.0.0"
   },
   "devDependencies": {
+    "cross-env": "^7.0.2",
     "nodemon": "^2.0.4"
   }
 }
